@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func selectSort(arr []int) {
-	for i := 0; i < len(arr); i++ {
+	for i := 0; i < len(arr)-1; i++ {
 		minIndex := i
 
-		for j := i; j < len(arr); j++ {
+		for j := i + 1; j < len(arr); j++ {
 			if arr[j] < arr[minIndex] {
 				minIndex = j
 			}
